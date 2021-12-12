@@ -1,5 +1,5 @@
 var maleNames= ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw", "Kofi","Kwame"];
-var femaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"]
+var femaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
 function nameGenerator(){
    var year = document.getElementById("year").value;
    var month = document.getElementById("month").value;
