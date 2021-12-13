@@ -2,10 +2,12 @@ body {
     height: 100%;
     background-color: greenyellow;
     background-size: cover;
+    background-position: center center;
 }
 h1 {
     color:blue;
     text-align: center;
+    font-family: bolder;
 }
 h3{
     color:blue;
@@ -20,9 +22,22 @@ h4{
     font-family:initial;
     padding: 0.25em 0.5em;
     text-align: left;
+    border-color: rgb(205, 90, 195);
 }
 .jumbotron {
     background-color: lightseagreen;
     padding-top: 25px;
     padding-bottom: 25px;
 }
+.jumbotron .container {
+    position: relative;
+}
+.form {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.row {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
