@@ -3,3 +3,7 @@ body {
     background-color: greenyellow;
     background-size: cover;
 }
+h1 {
+    color:blue;
+    text-align: center;
+}
