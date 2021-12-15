@@ -1,25 +1,29 @@
-var akan = function(y, m, d, g) {
-  var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-  var maleNames = ["Kwasi", "Kudwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-  var d = new Date(y, --m, d);
-  if (g === "Female") {
-      return d && femaleNames[d.getDay()];
-  } else {
-      return d && maleNames[d.getDay()];
+var mNames= ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+var fNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
+function akanNames(){
+   var year = document.getElementById("year").value;
+   var month = document.getElementById("month").value;
+   var day = document.getElementById("day").value;
+   var gender = document.getElementById ("gender").value;
+   let birthday = new Date(`${year}-${month}-${day}`)
+   let dateString = birthday.toDateString()
+   let birthDate = birthday.getDay()
+
+     if(gender == "male"){
+    let name = mNames[birthDate]
+    alert ("You were born on"+  dateString + "Your Akan Name is" + name)
+  }
+  else if (gender == "female"){
+    let name = fNames[birthDate]
+    alert ("You were born on:  " +  dateString + ", and Your Akan Name is: " + name)
+  }
+  else{
+    alert("Kindly select your gender")
+  }    
+  if (month > 12 || month < 1){
+     alert ("You've entered invalid month")
+  }
+  if (day > 31 || day <1){
+    alert ("You've entered invalid date")
   }
 }
-
-// User interface (or front-end) logic:
-$(document).ready(function() {
-  $("form#form").submit(function(event) {
-      event.preventDefault();
-      var y = parseInt($("#year").val());
-      var m = parseInt($("#month").val());
-      var d = parseInt($("#date").val());
-      var g = $("input:radio[name=gender]:checked").val();
-      var result = akan(y, m, d, g);
-      alert("Your akan name is: " + result);
-      //refresh page
-      document.getElementById("form").reset();
-  });
-});
