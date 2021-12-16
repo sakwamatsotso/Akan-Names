@@ -1,4 +1,4 @@
-# AkanName-Generator
+# AkanNames
 #### The user is able to generate name (Akan Name) based of the Date of Birth, Dec.2021 - V1
 #### By **Martin Sakwa**
 ## Description
