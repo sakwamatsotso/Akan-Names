@@ -3,6 +3,7 @@ body {
     background-color: greenyellow;
     background-size: cover;
     background-position: center center;
+    font-family: cursive;
 }
 h1 {
     color:blue;
@@ -12,6 +13,7 @@ h1 {
 h3{
     color:blue;
     text-align:justify;
+    padding: 15px;
 }
 h4{
     color:white;
@@ -36,6 +38,9 @@ h4{
 .form {
     margin-bottom: 20px;
     padding-bottom: 20px;
+    text-align: left;
+    border-radius: 10px;
+    width: 80%;
 }
 .row {
     margin-top: 10px;
